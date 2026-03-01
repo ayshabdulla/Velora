@@ -13,7 +13,8 @@ const path = require('path');
 const app = express();
 app.use(cors({
     // <!-- we are allowing cross origin resource sharinh-->
-    origin: 'https://velora-1-qcxg.onrender.com',
+    origin: ["http://localhost:5173",
+    'https://velora-1-qcxg.onrender.com'],
     // <!-- this line will allow frontend to send cookies to backend -->
     credentials: true
 }));
@@ -25,7 +26,7 @@ RunServer()
 
 app.use("/uploads", express.static(path.join(__dirname,"uploads")));
 
-app.use('https://velora-ki1r.onrender.com/api/products',productRoutes);
+app.use('/api/products',productRoutes);
 app.use('/api/user',userRoutes);
 app.use('/api/payment',paymentRoutes);
 app.use('/api/admin',adminRoutes);

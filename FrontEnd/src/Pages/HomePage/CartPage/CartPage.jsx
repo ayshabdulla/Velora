@@ -1,4 +1,4 @@
-import "./Cartpage.css";
+import "./CartPage.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { AiOutlineDelete } from "react-icons/ai";

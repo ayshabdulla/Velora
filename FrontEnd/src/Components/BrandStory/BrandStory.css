@@ -1,0 +1,24 @@
+.brand-story {
+  padding: 160px 60px;
+  background: white;
+  text-align: center;
+}
+
+.brand-container {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.brand-story h2 {
+  font-size: 24px;
+  letter-spacing: 8px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.brand-story p {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #555;
+  font-weight: 300;
+}

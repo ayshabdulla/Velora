@@ -1,0 +1,7 @@
+.home-top {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 30px;
+  padding: 0 60px;
+  background: #f6f4ef;
+}

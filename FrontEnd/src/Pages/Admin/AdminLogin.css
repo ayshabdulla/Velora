@@ -1,0 +1,261 @@
+.admin-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a; /* Dark background for Admin distinction */
+}
+
+.admin-login-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.admin-login-card h2 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.admin-login-card p {
+    color: #888;
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.admin-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.admin-btn:hover {
+    background-color: #333;
+}
+
+.error-msg {
+    background-color: #ffdddd;
+    color: #d8000c;
+    border: 1px solid #d8000c;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.admin-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.btn-add {
+  display: inline-block;
+  margin-bottom: 25px;
+  padding: 10px 16px;
+  background: #1b5e63;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+  align-items: start;
+  justify-items: start; /* ⬅ IMPORTANT */
+}
+
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+}
+
+.image-box {
+  height: 180px;
+  background: #f4f4f4;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.card-body h4 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.price {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.stock {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.stock.in {
+  background: #d4edda;
+  color: #155724;
+}
+
+.stock.out {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.btn-edit,
+.btn-delete {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background: grey;
+  color: white;
+}
+
+.btn-delete {
+  background: grey;
+  color: white;
+  border: none;
+}
+/* ===== Admin Layout ===== */
+.admin-container {
+  padding: 30px;
+  width: 100%;
+}
+
+.admin-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* ===== Form Card ===== */
+.form-card {
+  background: #ffffff;
+  max-width: 520px;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+/* ===== Inputs ===== */
+.form-card input,
+.form-card select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline: none;
+}
+
+.form-card input:focus,
+.form-card select:focus {
+  border-color: #1b5e63;
+}
+
+/* ===== Image Preview ===== */
+.preview-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  border: 1px solid #ddd;
+}
+
+/* ===== Buttons ===== */
+.btn-edit {
+  width: 100%;
+  padding: 12px;
+  background: #1b5e63;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-edit:hover {
+  background: #144a4f;
+}
+
+/* ===== File Input ===== */
+.form-card input[type="file"] {
+  padding: 8px;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 600px) {
+  .form-card {
+    padding: 20px;
+  }
+
+  .preview-img {
+    height: 180px;
+  }
+}

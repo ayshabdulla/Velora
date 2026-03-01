@@ -1,0 +1,60 @@
+.productCard {
+  text-decoration: none;
+  color: black;
+  transition: 0.4s ease;
+  display: block;
+  width: 100%;
+ 
+}
+
+
+
+.productCard:hover {
+  transform: translateY(-6px);
+}
+
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.prdct-img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+  display: block;
+}
+
+.productCard:hover .prdct-img {
+  transform: scale(1.05);
+}
+
+.card-body {
+  margin-top: 22px;
+  text-align: center;
+}
+
+.card-body h1 {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.price-box {
+  font-size: 14px;
+  color: #777;
+}
+
+.old-price {
+  text-decoration: line-through;
+  margin-right: 8px;
+  color: #aaa;
+}
+
+.new-price {
+  color: black;
+  font-weight: 500;
+}

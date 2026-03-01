@@ -1,0 +1,53 @@
+.velora-standard {
+  padding: 180px 80px;
+  text-align: center;
+  background: #f5f3f2;
+}
+
+.velora-standard h2 {
+  font-size: 28px;
+  letter-spacing: 14px;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.standard-sub {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 100px;
+}
+
+.standard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.standard-card h3 {
+  font-size: 40px;
+  font-weight: 300;
+  color: #bfa14a;
+  margin-bottom: 20px;
+}
+
+.standard-card h4 {
+  font-size: 16px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.standard-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .standard-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}

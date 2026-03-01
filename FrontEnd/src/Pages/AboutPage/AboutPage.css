@@ -1,0 +1,96 @@
+.about-page {
+  font-family: 'Inter', sans-serif;
+  background: white;
+  color: black;
+}
+
+/* ================= HERO ================= */
+
+.about-hero {
+  text-align: center;
+  padding: 140px 20px 100px;
+}
+
+.about-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.about-tagline {
+  font-size: 13px;
+  letter-spacing: 4px;
+  color: #c6a96b;
+  text-transform: uppercase;
+}
+
+/* ================= CONTENT ================= */
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 12%;
+  gap: 80px;
+}
+
+.about-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+.about-text p {
+  line-height: 1.9;
+  margin-bottom: 25px;
+  font-size: 15px;
+  color: #333;
+}
+
+/* ================= IMAGE ================= */
+
+.about-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* ================= VALUES ================= */
+
+.about-values {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  padding: 120px 10%;
+  text-align: center;
+  border-top: 1px solid #f0f0f0;
+}
+
+.value-box h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.value-box p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-values {
+    flex-direction: column;
+    gap: 50px;
+  }
+}

@@ -1,0 +1,151 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 80px;
+  border-bottom: 1px solid #f0f0f0;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+/* ================= LOGO ================= */
+
+.logo a {
+  font-size: 24px;
+  letter-spacing: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+
+/* ================= CENTER LINKS ================= */
+
+.nav-center {
+  display: flex;
+  gap: 50px;
+}
+
+/* ================= RIGHT SIDE ================= */
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* ================= LINKS ================= */
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  letter-spacing: 2px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Gold underline hover effect */
+.link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 1px;
+  background: #c6a96b;
+  transition: width 0.3s ease;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+/* ================= REGISTER BUTTON (same style) ================= */
+
+.register-btn {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  letter-spacing: 2px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Same hover underline */
+.register-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 1px;
+  background: #c6a96b;
+  transition: width 0.3s ease;
+}
+
+.register-btn:hover::after {
+  width: 100%;
+}
+
+/* ================= CART ICON ================= */
+
+.cart-icon-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.cart-icon {
+  font-size: 22px;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.cart-icon:hover {
+  color: #c6a96b;
+}
+
+/* Cart Badge */
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #c6a96b;
+  color: white;
+  font-size: 10px;
+  padding: 3px 6px;
+  border-radius: 50%;
+  font-weight: 500;
+}
+
+/* ================= LOGOUT BUTTON ================= */
+
+.logout-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: black;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+/* Same underline effect for logout */
+.logout-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 1px;
+  background: #c6a96b;
+  transition: width 0.3s ease;
+}
+
+.logout-btn:hover::after {
+  width: 100%;
+}

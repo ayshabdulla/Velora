@@ -1,0 +1,60 @@
+.hero {
+  height: 92vh;
+  background: url("/hero-bag.jpg") center/cover no-repeat;
+  position: relative;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.25);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+  font-family: "Helvetica Neue", sans-serif;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.hero-content h1 {
+  font-size: 72px;
+  letter-spacing: 12px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  letter-spacing: 4px;
+  margin-bottom: 45px;
+}
+
+.hero-btn {
+  text-decoration: none;
+  padding: 14px 50px;
+  border: 1px solid white;
+  color: white;
+  letter-spacing: 3px;
+  font-size: 12px;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #c6a96b;
+  border-color: #c6a96b;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

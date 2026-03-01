@@ -1,0 +1,67 @@
+.services-section {
+  padding: 180px 80px;
+  text-align: center;
+  background: #f8f6f5;
+}
+
+.services-section h2 {
+  font-size: 26px;
+  letter-spacing: 14px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.services-sub {
+  font-size: 15px;
+  color: #777;
+  margin-bottom: 100px;
+}
+
+/* Grid */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Clean style (no card box) */
+.service-item {
+  text-align: center;
+  padding: 20px;
+  transition: 0.4s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-4px);
+}
+
+/* Icons */
+.icons {
+  font-size: 28px;
+  color: #bfa14a;
+  margin-bottom: 25px;
+}
+
+/* Title */
+.service-item h4 {
+  font-size: 15px;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+/* Description */
+.service-item p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .services-container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}

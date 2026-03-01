@@ -1,0 +1,70 @@
+/* Background */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f1eb; /* velora beige */
+}
+
+/* Card */
+.login-card {
+    width: 380px;
+    background: #ffffff;
+    padding: 50px 40px;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Title */
+.login-title {
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 22px;
+    letter-spacing: 5px;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+/* Labels */
+.login-card label {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #222;
+}
+
+/* Inputs */
+.login-card input {
+    padding: 10px 5px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    background: transparent;
+    outline: none;
+}
+
+/* Focus */
+.login-card input:focus {
+    border-bottom: 1px solid #000;
+}
+
+/* Button */
+.login-btn {
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    background: #000;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Hover */
+.login-btn:hover {
+    background: #333;
+}

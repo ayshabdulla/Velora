@@ -1,0 +1,59 @@
+.newsletter {
+  padding: 160px 20px;
+  background: #f6f4ef;
+  text-align: center;
+}
+
+.newsletter h2 {
+  font-size: 28px;
+  letter-spacing: 10px;
+  font-weight: 300;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.newsletter h2::after {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background: black;
+  display: block;
+  margin: 20px auto 0;
+}
+
+.newsletter p {
+  font-size: 17px;
+  color: #666;
+  margin-bottom: 60px;
+  font-weight: 300;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input {
+  padding: 14px 20px;
+  width: 320px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+.newsletter-form button {
+  padding: 14px 30px;
+  border: 1px solid black;
+  background: black;
+  color: white;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background: transparent;
+  color: black;
+}

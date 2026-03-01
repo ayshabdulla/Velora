@@ -1,0 +1,38 @@
+.popular {
+  padding: 160px 80px;
+  background: #f8f6f2;
+  text-align: center;
+}
+
+.popular h2 {
+  font-size: 28px;
+  letter-spacing: 12px;
+  font-weight: 300;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.popular h2::after {
+  content: "";
+  width: 70px;
+  height: 1px;
+  background: #111;
+  display: block;
+  margin: 25px auto 0;
+}
+
+.popular p {
+  font-size: 17px;
+  color: #777;
+  margin-top: 25px;
+  margin-bottom: 80px;
+  font-weight: 300;
+}
+
+.popularproducts {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}

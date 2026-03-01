@@ -13,7 +13,7 @@ const path = require('path');
 const app = express();
 app.use(cors({
     // <!-- we are allowing cross origin resource sharinh-->
-    origin: 'https://velora-ki1r.onrender.com',
+    origin: 'https://velora-1-qcxg.onrender.com',
     // <!-- this line will allow frontend to send cookies to backend -->
     credentials: true
 }));

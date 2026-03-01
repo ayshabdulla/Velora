@@ -20,7 +20,7 @@ const HomePage = () => {
   const [products, setProducts] = useState([])
 
   useEffect(() => {
-    axios.get('http://localhost:8080/api/products')
+    axios.get('https://velora-ki1r.onrender.com/api/products')
       .then((res) => {
         setProducts(res.data.data)
       })

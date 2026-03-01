@@ -13,7 +13,7 @@ const Navbar = () => {
   useEffect(() => {
   const fetchCart = async () => {
     try {
-      const res = await axios.get("/api/products/getusercart", {
+      const res = await axios.get("https://velora-ki1r.onrender.com/api/products/getusercart", {
         withCredentials: true,
       });
 

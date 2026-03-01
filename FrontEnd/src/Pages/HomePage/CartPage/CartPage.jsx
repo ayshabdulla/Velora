@@ -22,7 +22,7 @@ const CartPage = () => {
     const getCartItems = async () => {
       try {
         const response = await axios.get(
-          "/api/products/getusercart",
+          "https://velora-ki1r.onrender.com/api/products/getusercart",
           { withCredentials: true }
         );
         setProducts(response.data.products);
@@ -40,7 +40,7 @@ const CartPage = () => {
   const deleteFromCart = async (productId) => {
     try {
       const response = await axios.delete(
-        `/api/products/cart/delete/${productId}`,
+        `https://velora-ki1r.onrender.com/api/products/cart/delete/${productId}`,
         { withCredentials: true }
       );
 

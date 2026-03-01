@@ -12,7 +12,7 @@ const ProductDetails = () => {
     const getSingleProduct = async () => {
       try {
         const res = await axios.get(
-          `/api/products/single/${id}`
+          `https://velora-ki1r.onrender.com/api/products/single/${id}`
         );
         setProduct(res.data.data);
       } catch (error) {

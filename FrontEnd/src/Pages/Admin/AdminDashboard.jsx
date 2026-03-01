@@ -19,7 +19,7 @@ const AdminDashboard = () => {
     // 2. Function to fetch all products from backend
     const getProducts = async () => {
         try {
-            const res = await axios.get('/api/products/all');
+            const res = await axios.get('https://velora-ki1r.onrender.com/api/products/all');
             // We assume your backend sends data inside res.data.data based on your controller
             setProducts(res.data.data); 
         } catch (err) {
@@ -37,7 +37,7 @@ const AdminDashboard = () => {
         if(window.confirm("Are you sure you want to delete this product?")) {
             try {
                 // Call the Delete API with the Admin Token in header
-                await axios.delete(`/api/products/delete/${id}`, {
+                await axios.delete(`https://velora-ki1r.onrender.com/api/products/delete/${id}`, {
                     headers: { Authorization: adminToken }
                 });
                 
@@ -63,7 +63,7 @@ const AdminDashboard = () => {
           
           <div className="image-box">
             <img
-              src={`http://localhost:8080/${product.img}`}
+              src={`https://velora-ki1r.onrender.com/${product.img}`}
               alt={product.productName}
             />
           </div>

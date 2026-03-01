@@ -16,7 +16,7 @@ export default function LoginPage() {
 
         try {
             const response = await axios.post(
-                '/api/user/login',
+                'https://velora-ki1r.onrender.com/api/user/login',
                 { email, password },
                 { withCredentials: true }
             );

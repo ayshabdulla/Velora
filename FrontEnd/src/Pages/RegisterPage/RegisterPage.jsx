@@ -20,7 +20,7 @@ export default function RegisterPage() {
 
     try {
       const response = await axios.post(
-        "/api/user/register",
+        "https://velora-ki1r.onrender.com/api/user/register",
         {
           email,
           password,

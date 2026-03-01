@@ -33,7 +33,7 @@ const CreateProduct = () => {
             setOnEdit(true);
             const getProduct = async () => {
                 try {
-                    const res = await axios.get(`/api/products/single/${params.id}`);
+                    const res = await axios.get(`https://velora-ki1r.onrender.com/api/products/single/${params.id}`);
                     const data = res.data.data || res.data;
                     setProductName(data.productName);
                     setPrice(data.price);
@@ -71,8 +71,8 @@ const CreateProduct = () => {
 
         try {
             const url = onEdit
-                ? `http://localhost:8080/api/products/update/${params.id}`
-                : 'http://localhost:8080/api/products/create';
+                ? `https://velora-ki1r.onrender.com/api/products/update/${params.id}`
+                : 'https://velora-ki1r.onrender.com/api/products/create';
 
             const method = onEdit ? 'put' : 'post';
             await axios[method](url, formData, {

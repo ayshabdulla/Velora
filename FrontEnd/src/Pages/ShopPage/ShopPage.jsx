@@ -11,7 +11,7 @@ const ShopPage = () => {
 
     useEffect(() => {
         axios
-            .get("/api/products")
+            .get("https://velora-ki1r.onrender.com/api/products")
             .then((res) => {
                 setProducts(res.data.data);
             })

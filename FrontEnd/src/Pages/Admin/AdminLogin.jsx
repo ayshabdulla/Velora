@@ -24,7 +24,7 @@ const AdminLogin = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post('/api/admin/login', {
+            const res = await axios.post('https://velora-ki1r.onrender.com/api/admin/login', {
                 email: credentials.email,
                 password: credentials.password
             });

@@ -12,11 +12,11 @@ const path = require('path');
 
 const app = express();
 app.use(cors({
-    // <!-- we are allowing cross origin resource sharinh-->
-    origin: ["http://localhost:5173",
-    'https://velora-1-qcxg.onrender.com'],
-    // <!-- this line will allow frontend to send cookies to backend -->
-    credentials: true
+  origin: [
+    "http://localhost:5173",
+    "https://velora-1-qcxg.onrender.com"
+  ],
+  credentials: true
 }));
 app.use(express.json());
 

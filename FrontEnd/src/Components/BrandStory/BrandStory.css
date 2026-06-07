@@ -22,3 +22,18 @@
   color: #555;
   font-weight: 300;
 }
+
+@media (max-width: 768px) {
+  .brand-story {
+    padding: 60px 20px;
+  }
+
+  .brand-story h2 {
+    font-size: 22px;
+    letter-spacing: 4px;
+  }
+
+  .brand-story p {
+    font-size: 14px;
+  }
+}

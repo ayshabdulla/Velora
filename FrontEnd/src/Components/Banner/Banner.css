@@ -14,7 +14,6 @@
   letter-spacing: 10px;
   margin-bottom: 30px;
   font-weight: 300;
-  position: relative;
 }
 
 .banner h2::after {
@@ -41,7 +40,6 @@
   text-decoration: none;
   letter-spacing: 4px;
   font-size: 14px;
-  transition: 0.4s ease;
 }
 
 .banner-btn:hover {
@@ -49,13 +47,27 @@
   color: white;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
+@media (max-width: 768px) {
+  .banner {
+    padding: 60px 20px;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .banner-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .banner h2 {
+    font-size: 22px;
+    letter-spacing: 4px;
+  }
+
+  .banner p {
+    font-size: 14px;
+  }
+
+  .banner-btn {
+    padding: 12px 24px;
+    font-size: 12px;
   }
 }

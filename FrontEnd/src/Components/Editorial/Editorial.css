@@ -53,3 +53,36 @@
   background: black;
   color: white;
 }
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .editorial {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 30px;
+  }
+
+  .editorial-img img {
+    height: 350px;
+  }
+
+  .editorial-content {
+    text-align: center;
+  }
+
+  .editorial-content h2 {
+    font-size: 22px;
+    letter-spacing: 4px;
+  }
+
+  .editorial-content h2::after {
+    margin: 20px auto 0;
+  }
+
+  .editorial-content p {
+    max-width: 100%;
+    font-size: 14px;
+    margin: 20px 0;
+  }
+}

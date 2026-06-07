@@ -59,9 +59,22 @@
 }
 
 /* Responsive */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
+  .services-section {
+    padding: 80px 20px;
+  }
+
+  .services-section h2 {
+    font-size: 22px;
+    letter-spacing: 4px;
+  }
+
+  .services-sub {
+    margin-bottom: 50px;
+    font-size: 14px;
+  }
+
   .services-container {
-    grid-template-columns: 1fr;
-    gap: 60px;
+    gap: 40px;
   }
 }

@@ -36,3 +36,26 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 60px;
 }
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .most-featured {
+    padding: 60px 20px;
+  }
+
+  .most-featured h2 {
+    font-size: 22px;
+    letter-spacing: 4px;
+  }
+
+  .most-featured p {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  .featured-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}

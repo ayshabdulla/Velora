@@ -36,3 +36,26 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 60px;
 }
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .popular {
+    padding: 60px 20px;
+  }
+
+  .popular h2 {
+    font-size: 22px;
+    letter-spacing: 4px;
+  }
+
+  .popular p {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  .popularproducts {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}

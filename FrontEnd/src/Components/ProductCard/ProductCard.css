@@ -4,10 +4,7 @@
   transition: 0.4s ease;
   display: block;
   width: 100%;
- 
 }
-
-
 
 .productCard:hover {
   transform: translateY(-6px);
@@ -57,4 +54,27 @@
 .new-price {
   color: black;
   font-weight: 500;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .prdct-img {
+    height: 300px;
+  }
+
+  .card-body h1 {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .price-box {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .prdct-img {
+    height: 260px;
+  }
 }

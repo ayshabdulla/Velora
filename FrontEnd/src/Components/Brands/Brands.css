@@ -38,3 +38,20 @@
   opacity: 1;
   transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+  .brands-container {
+    padding: 60px 0;
+  }
+
+  .brands-title {
+    font-size: 18px;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+  }
+
+  .marquee-image {
+    height: 45px;
+    margin: 0 20px;
+  }
+}

@@ -45,9 +45,31 @@
 }
 
 /* Responsive */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
+  .velora-standard {
+    padding: 80px 20px;
+  }
+
+  .velora-standard h2 {
+    font-size: 22px;
+    letter-spacing: 4px;
+  }
+
+  .standard-sub {
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+
   .standard-grid {
-    grid-template-columns: 1fr;
-    gap: 60px;
+    gap: 40px;
+  }
+
+  .standard-card h3 {
+    font-size: 32px;
+  }
+
+  .standard-card h4 {
+    font-size: 14px;
+    letter-spacing: 2px;
   }
 }

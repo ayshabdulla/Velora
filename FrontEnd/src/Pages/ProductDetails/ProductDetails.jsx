@@ -29,7 +29,7 @@ const ProductDetails = () => {
 
     try {
       const response = await axios.post(
-        "/api/products/addtocart",
+        "https://velora-ki1r.onrender.com/api/products/addtocart",
         { productId: id, quantity: 1 },
         { withCredentials: true }
       );
@@ -54,7 +54,7 @@ const ProductDetails = () => {
       <div className="productDetails-container">
         <div className="image-section">
           <img
-            src={`/${product.img}`}
+            src={`https://velora-ki1r.onrender.com/uploads/${product.img}`}
             alt={product.productName}
             className="product-details-image"
           />

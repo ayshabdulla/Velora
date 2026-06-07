@@ -1,3 +1,5 @@
+/* ================= NAVBAR ================= */
+
 .navbar {
   position: sticky;
   top: 0;
@@ -47,7 +49,6 @@
   transition: color 0.3s ease;
 }
 
-/* Gold underline hover effect */
 .link::after {
   content: "";
   position: absolute;
@@ -63,7 +64,7 @@
   width: 100%;
 }
 
-/* ================= REGISTER BUTTON (same style) ================= */
+/* ================= REGISTER BUTTON ================= */
 
 .register-btn {
   text-decoration: none;
@@ -74,7 +75,6 @@
   transition: color 0.3s ease;
 }
 
-/* Same hover underline */
 .register-btn::after {
   content: "";
   position: absolute;
@@ -108,7 +108,6 @@
   color: #c6a96b;
 }
 
-/* Cart Badge */
 .cart-badge {
   position: absolute;
   top: -8px;
@@ -134,7 +133,6 @@
   position: relative;
 }
 
-/* Same underline effect for logout */
 .logout-btn::after {
   content: "";
   position: absolute;
@@ -148,4 +146,94 @@
 
 .logout-btn:hover::after {
   width: 100%;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 992px) {
+  .navbar {
+    padding: 20px 30px;
+  }
+
+  .nav-center {
+    gap: 20px;
+  }
+
+  .nav-right {
+    gap: 15px;
+  }
+
+  .logo a {
+    font-size: 20px;
+    letter-spacing: 4px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .logo a {
+    font-size: 18px;
+    letter-spacing: 3px;
+  }
+
+  .nav-center {
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+    order: 3;
+  }
+
+  .nav-right {
+    gap: 10px;
+  }
+
+  .link,
+  .register-btn,
+  .logout-btn {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  .cart-icon {
+    font-size: 18px;
+  }
+
+  .cart-badge {
+    font-size: 8px;
+    padding: 2px 5px;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 12px;
+  }
+
+  .logo a {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  .nav-center {
+    gap: 10px;
+  }
+
+  .link,
+  .register-btn,
+  .logout-btn {
+    font-size: 10px;
+  }
+
+  .cart-icon {
+    font-size: 16px;
+  }
 }

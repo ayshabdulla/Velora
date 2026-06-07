@@ -50,3 +50,18 @@
 .promo-card:hover img {
   transform: scale(1.08);
 }
+
+@media (max-width: 768px) {
+  .promo-section {
+    padding: 60px 20px;
+  }
+
+  .promo-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .promo-card img {
+    height: 350px;
+  }
+}

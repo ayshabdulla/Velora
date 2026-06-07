@@ -56,3 +56,19 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+@media (max-width: 768px) {
+  .new-arrivals {
+    padding: 80px 20px;
+  }
+
+  .arrivals-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .new-arrivals h2 {
+    font-size: 22px;
+    letter-spacing: 6px;
+  }
+}
